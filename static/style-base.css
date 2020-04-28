@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    min-height: 100%;
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+}
+h1, p, a {
+    margin-top: 0;
+}
+h1 {
+    font-family: "Geneva";
+    margin-top: 0;
+}
+
+.page-title {
+    text-align: center;
+}
+
+html{
+    height: 100%;
+}
+
+.wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    transition: clip-path 0.5s ease-in-out;
+}
+
+#toki-wrapper {
+    left: 0;
+    background-color: #eeeeee;
+}
+#en-wrapper {
+    right: 0;
+    background-color: #ffffff;
+}
+
+#toki-wrapper.expanded {
+    clip-path: inset(0 0% 0 0);
+}
+#toki-wrapper:not(expanded) {
+    clip-path: inset(0 100% 0 0);
+}
+
+#en-wrapper.expanded {
+    clip-path: inset(0 0 0 0%);
+}
+#en-wrapper:not(expanded) {
+    clip-path: inset(0 0 0 100%);
+}
+
+#content-toki {
+    background-color: #dddddd;
+}
+
+#content-en {
+    background-color: #eeeeee;
+}
+
+.content {
+    height: 100%;
+    padding-top: 1ex;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-left: 15vw;
+    margin-right: 15vw;
+
+    color: #444455;
+}
+
+.change-language {
+}
+
