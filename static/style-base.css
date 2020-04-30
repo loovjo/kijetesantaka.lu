@@ -43,16 +43,20 @@ html {
 
 #toki-wrapper.expanded {
     clip-path: inset(0 0% 0 0);
+    -webkit-clip-path: inset(0 0% 0 0);
 }
 #toki-wrapper:not(expanded) {
     clip-path: inset(0 100% 0 0);
+    -webkit-clip-path: inset(0 100% 0 0);
 }
 
 #en-wrapper.expanded {
     clip-path: inset(0 0 0 0%);
+    -webkit-clip-path: inset(0 0 0 0%);
 }
 #en-wrapper:not(expanded) {
     clip-path: inset(0 0 0 100%);
+    -webkit-clip-path: inset(0 0 0 100%);
 }
 
 #content-toki {
