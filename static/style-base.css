@@ -17,6 +17,10 @@ html {
     height: 100%;
 }
 
+span.highlight {
+    color: #ffbb34;
+}
+
 img {
     border: 1px solid #667788;
     border-radius: 15px;
