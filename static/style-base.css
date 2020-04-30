@@ -13,17 +13,22 @@ h1, h2, h3, h4 {
     margin-bottom: 0;
 }
 
-.page-title {
-    text-align: center;
-}
-
 html {
     height: 100%;
 }
 
+img {
+    border: 1px solid #667788;
+    border-radius: 15px;
+}
+
+.page-title {
+    text-align: center;
+}
+
 .wrapper {
     position: absolute;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 
     transition: clip-path 0.5s ease-in-out;
@@ -59,23 +64,25 @@ html {
     -webkit-clip-path: inset(0 0 0 100%);
 }
 
-#content-toki {
-    background-color: #dddddd;
-}
-
-#content-en {
-    background-color: #eeeeee;
-}
-
 .content {
-    height: 100%;
+    background-color: inherit;
+    border: 1px solid #667788;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-left-style: solid;
+    border-radius: 15px;
+
+    min-height: 100vh;
     margin-left: 15vw;
     margin-right: 15vw;
+    padding-bottom: 2ex;
 
     color: #444455;
 }
 
 .change-language {
+    padding-bottom: 2em;
 }
 
 .header {
