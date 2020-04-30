@@ -31,8 +31,7 @@ img {
     min-height: 100%;
     width: 100%;
 
-    transition: clip-path 0.5s ease-in-out;
-    -webkit-transition: -webkit-clip-path 0.5s ease-in-out;
+    transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
 
     background-image: url(kijetesantakalu.svg);
     background-repeat: repeat;
